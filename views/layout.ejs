@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=typeof title == 'undefined' ? 'ArcadeBarbaric' : title%></title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!--
+        Stylesheets and Preprocessors
+        ==============================
+
+        You can always bring in CSS files manually with `<link>` tags, or asynchronously
+        using a solution like AMD (RequireJS).  Or, if you like, you can take advantage
+        of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+        By default, stylesheets from your `assets/styles` folder are included
+        here automatically (between STYLES and STYLES END). Both CSS (.css) and LESS (.less)
+        are supported. In production, your styles will be minified and concatenated into
+        a single file.
+
+        To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Change the order of your CSS files
+            + Import stylesheets from other directories
+            + Use a different or additional preprocessor, like SASS, SCSS or Stylus
+    -->
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/importer.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <!--STYLES END-->
+    <script src="/js/phaser-2.6.2/build/phaser.js"></script>
+  </head>
+
+  <body>
+    <%- body %>
+
+
+
+    <!--
+        Client-side Templates
+        ========================
+
+        HTML templates are important prerequisites of modern, rich client applications.
+        To work their magic, frameworks like Backbone, Angular, Ember, and Knockout require
+        that you load these templates client-side.
+
+        By default, your Gruntfile is configured to automatically load and precompile
+        client-side JST templates in your `assets/templates` folder, then
+        include them here automatically (between TEMPLATES and TEMPLATES END).
+
+        To customize this behavior to fit your needs, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+
+            + Import templates from other directories
+            + Use a different template engine (handlebars, jade, dust, etc.)
+            + Internationalize your client-side templates using a server-side
+              stringfile before they're served.
+    -->
+
+    <!--TEMPLATES-->
+    
+    <!--TEMPLATES END-->
+
+
+    <!--
+
+      Client-side Javascript
+      ========================
+
+      You can always bring in JS files manually with `script` tags, or asynchronously
+      on the client using a solution like AMD (RequireJS).  Or, if you like, you can
+      take advantage of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+      By default, files in your `assets/js` folder are included here
+      automatically (between SCRIPTS and SCRIPTS END).  Both JavaScript (.js) and
+      CoffeeScript (.coffee) are supported. In production, your scripts will be minified
+      and concatenated into a single file.
+
+      To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+      For example, here are a few things you could do:
+
+          + Change the order of your scripts
+          + Import scripts from other directories
+          + Use a different preprocessor, like TypeScript
+
+    -->
+
+    <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/games/aquacoi.js"></script>
+    <script src="/js/npm.js"></script>
+    <script src="/js/phaser-2.6.2/build/creature.js"></script>
+    <script src="/js/phaser-2.6.2/build/creature.min.js"></script>
+    <script src="/js/phaser-2.6.2/build/custom/p2.js"></script>
+    <script src="/js/phaser-2.6.2/build/custom/p2.min.js"></script>
+    <script src="/js/phaser-2.6.2/build/custom/phaser-arcade-physics.js"></script>
+    <script src="/js/phaser-2.6.2/build/custom/phaser-arcade-physics.min.js"></script>
+    <script src="/js/phaser-2.6.2/build/custom/phaser-minimum.js"></script>
+    <script src="/js/phaser-2.6.2/build/custom/phaser-minimum.min.js"></script>
+    <script src="/js/phaser-2.6.2/build/custom/phaser-no-physics.js"></script>
+    <script src="/js/phaser-2.6.2/build/custom/phaser-no-physics.min.js"></script>
+    <script src="/js/phaser-2.6.2/build/custom/phaser-split.js"></script>
+    <script src="/js/phaser-2.6.2/build/custom/phaser-split.min.js"></script>
+    <script src="/js/phaser-2.6.2/build/custom/pixi.js"></script>
+    <script src="/js/phaser-2.6.2/build/custom/pixi.min.js"></script>
+    <script src="/js/phaser-2.6.2/build/p2.js"></script>
+    <script src="/js/phaser-2.6.2/build/p2.min.js"></script>
+    <script src="/js/phaser-2.6.2/build/phaser-creature.js"></script>
+    <script src="/js/phaser-2.6.2/build/phaser-creature.min.js"></script>
+    <script src="/js/phaser-2.6.2/build/phaser.js"></script>
+    <script src="/js/phaser-2.6.2/build/phaser.min.js"></script>
+    <script src="/js/phaser-2.6.2/build/pixi.js"></script>
+    <script src="/js/phaser-2.6.2/build/pixi.min.js"></script>
+    <script src="/js/phaser-2.6.2/docs/pixi-jsdoc.js"></script>
+    <script src="/js/phaser-2.6.2/docs/scripts/bootstrap-dropdown.js"></script>
+    <script src="/js/phaser-2.6.2/docs/scripts/bootstrap-tab.js"></script>
+    <script src="/js/phaser-2.6.2/docs/scripts/jquery.localScroll.js"></script>
+    <script src="/js/phaser-2.6.2/docs/scripts/jquery.min.js"></script>
+    <script src="/js/phaser-2.6.2/docs/scripts/jquery.scrollTo.js"></script>
+    <script src="/js/phaser-2.6.2/docs/scripts/jquery.sunlight.js"></script>
+    <script src="/js/phaser-2.6.2/docs/scripts/prettify/jquery.min.js"></script>
+    <script src="/js/phaser-2.6.2/docs/scripts/prettify/lang-css.js"></script>
+    <script src="/js/phaser-2.6.2/docs/scripts/prettify/prettify.js"></script>
+    <script src="/js/phaser-2.6.2/docs/scripts/sunlight-plugin.doclinks.js"></script>
+    <script src="/js/phaser-2.6.2/docs/scripts/sunlight-plugin.linenumbers.js"></script>
+    <script src="/js/phaser-2.6.2/docs/scripts/sunlight-plugin.menu.js"></script>
+    <script src="/js/phaser-2.6.2/docs/scripts/sunlight.javascript.js"></script>
+    <script src="/js/phaser-2.6.2/docs/scripts/sunlight.js"></script>
+    <script src="/js/phaser-2.6.2/docs/scripts/toc.js"></script>
+    <script src="/js/phaser-2.6.2/docs/scripts/URI.js"></script>
+    <script src="/js/phaser-2.6.2/filters/BinarySerpents.js"></script>
+    <script src="/js/phaser-2.6.2/filters/BlurX.js"></script>
+    <script src="/js/phaser-2.6.2/filters/BlurY.js"></script>
+    <script src="/js/phaser-2.6.2/filters/CausticLight.js"></script>
+    <script src="/js/phaser-2.6.2/filters/CheckerWave.js"></script>
+    <script src="/js/phaser-2.6.2/filters/ColorBars.js"></script>
+    <script src="/js/phaser-2.6.2/filters/Fire.js"></script>
+    <script src="/js/phaser-2.6.2/filters/Gray.js"></script>
+    <script src="/js/phaser-2.6.2/filters/HueRotate.js"></script>
+    <script src="/js/phaser-2.6.2/filters/LazerBeam.js"></script>
+    <script src="/js/phaser-2.6.2/filters/LightBeam.js"></script>
+    <script src="/js/phaser-2.6.2/filters/Marble.js"></script>
+    <script src="/js/phaser-2.6.2/filters/Pixelate.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/AlphaMaskFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/AsciiFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/BlurFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/BlurXFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/BlurYFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/ColorMatrixFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/ColorStepFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/ConvolutionFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/CrossHatchFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/DisplacementFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/DotScreenFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/GrayFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/InvertFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/NoiseFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/NormalMapFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/PixelateFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/RGBSplitFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/SepiaFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/SmartBlurFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/TiltShiftFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/TiltShiftXFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/TiltShiftYFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/pixi/TwistFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/Plasma.js"></script>
+    <script src="/js/phaser-2.6.2/filters/SampleFilter.js"></script>
+    <script src="/js/phaser-2.6.2/filters/Tunnel.js"></script>
+    <script src="/js/phaser-2.6.2/Gruntfile.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/publish.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/static/scripts/bootstrap-dropdown.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/static/scripts/bootstrap-tab.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/static/scripts/jquery.localScroll.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/static/scripts/jquery.min.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/static/scripts/jquery.scrollTo.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/static/scripts/jquery.sunlight.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/static/scripts/prettify/jquery.min.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/static/scripts/prettify/lang-css.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/static/scripts/prettify/prettify.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/static/scripts/sunlight-plugin.doclinks.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/static/scripts/sunlight-plugin.linenumbers.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/static/scripts/sunlight-plugin.menu.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/static/scripts/sunlight.javascript.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/static/scripts/sunlight.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/static/scripts/toc.js"></script>
+    <script src="/js/phaser-2.6.2/resources/docstrap-master/template/static/scripts/URI.js"></script>
+    <script src="/js/phaser-2.6.2/resources/IE9 Polyfill/base64.js"></script>
+    <script src="/js/phaser-2.6.2/resources/IE9 Polyfill/dataview-polyfill.js"></script>
+    <script src="/js/phaser-2.6.2/resources/jsdoc Export JSON/template/publish.js"></script>
+    <script src="/js/phaser-2.6.2/resources/Project Templates/Basic/Boot.js"></script>
+    <script src="/js/phaser-2.6.2/resources/Project Templates/Basic/Game.js"></script>
+    <script src="/js/phaser-2.6.2/resources/Project Templates/Basic/MainMenu.js"></script>
+    <script src="/js/phaser-2.6.2/resources/Project Templates/Basic/Preloader.js"></script>
+    <script src="/js/phaser-2.6.2/resources/Project Templates/Full Screen Mobile/src/Boot.js"></script>
+    <script src="/js/phaser-2.6.2/resources/Project Templates/Full Screen Mobile/src/Game.js"></script>
+    <script src="/js/phaser-2.6.2/resources/Project Templates/Full Screen Mobile/src/MainMenu.js"></script>
+    <script src="/js/phaser-2.6.2/resources/Project Templates/Full Screen Mobile/src/Preloader.js"></script>
+    <script src="/js/phaser-2.6.2/resources/Project Templates/RequireJS/src/game.js"></script>
+    <script src="/js/phaser-2.6.2/resources/Project Templates/RequireJS/src/main.js"></script>
+    <script src="/js/phaser-2.6.2/resources/Project Templates/Responsive/Boot.js"></script>
+    <script src="/js/phaser-2.6.2/resources/Project Templates/Responsive/Game.js"></script>
+    <script src="/js/phaser-2.6.2/resources/Project Templates/Responsive/MainMenu.js"></script>
+    <script src="/js/phaser-2.6.2/resources/Project Templates/Responsive/Preloader.js"></script>
+    <script src="/js/phaser-2.6.2/resources/Project Templates/Webpack/src/entry.js"></script>
+    <script src="/js/phaser-2.6.2/resources/Project Templates/Webpack/src/game.js"></script>
+    <script src="/js/phaser-2.6.2/resources/tutorials/Spanish/02 Creando tu primer juego/js/phaser.min.js"></script>
+    <script src="/js/phaser-2.6.2/src/animation/Animation.js"></script>
+    <script src="/js/phaser-2.6.2/src/animation/AnimationManager.js"></script>
+    <script src="/js/phaser-2.6.2/src/animation/AnimationParser.js"></script>
+    <script src="/js/phaser-2.6.2/src/animation/creature/CreatureMeshBone.js"></script>
+    <script src="/js/phaser-2.6.2/src/animation/creature/gl-matrix.js"></script>
+    <script src="/js/phaser-2.6.2/src/animation/Frame.js"></script>
+    <script src="/js/phaser-2.6.2/src/animation/FrameData.js"></script>
+    <script src="/js/phaser-2.6.2/src/core/Camera.js"></script>
+    <script src="/js/phaser-2.6.2/src/core/Create.js"></script>
+    <script src="/js/phaser-2.6.2/src/core/Filter.js"></script>
+    <script src="/js/phaser-2.6.2/src/core/FlexGrid.js"></script>
+    <script src="/js/phaser-2.6.2/src/core/FlexLayer.js"></script>
+    <script src="/js/phaser-2.6.2/src/core/Game.js"></script>
+    <script src="/js/phaser-2.6.2/src/core/Group.js"></script>
+    <script src="/js/phaser-2.6.2/src/core/Plugin.js"></script>
+    <script src="/js/phaser-2.6.2/src/core/PluginManager.js"></script>
+    <script src="/js/phaser-2.6.2/src/core/ScaleManager.js"></script>
+    <script src="/js/phaser-2.6.2/src/core/Signal.js"></script>
+    <script src="/js/phaser-2.6.2/src/core/SignalBinding.js"></script>
+    <script src="/js/phaser-2.6.2/src/core/Stage.js"></script>
+    <script src="/js/phaser-2.6.2/src/core/State.js"></script>
+    <script src="/js/phaser-2.6.2/src/core/StateManager.js"></script>
+    <script src="/js/phaser-2.6.2/src/core/World.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/BitmapData.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/BitmapText.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/Button.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/Angle.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/Animation.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/AutoCull.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/Bounds.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/BringToTop.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/Component.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/Core.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/Crop.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/Delta.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/Destroy.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/Events.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/FixedToCamera.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/Health.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/InCamera.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/InputEnabled.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/InWorld.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/LifeSpan.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/LoadTexture.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/Overlap.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/PhysicsBody.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/Reset.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/ScaleMinMax.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/components/Smoothed.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/Creature.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/GameObjectCreator.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/GameObjectFactory.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/Graphics.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/Image.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/Particle.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/RenderTexture.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/RetroFont.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/Rope.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/Sprite.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/SpriteBatch.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/Text.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/TileSprite.js"></script>
+    <script src="/js/phaser-2.6.2/src/gameobjects/Video.js"></script>
+    <script src="/js/phaser-2.6.2/src/geom/Circle.js"></script>
+    <script src="/js/phaser-2.6.2/src/geom/Ellipse.js"></script>
+    <script src="/js/phaser-2.6.2/src/geom/Hermite.js"></script>
+    <script src="/js/phaser-2.6.2/src/geom/Line.js"></script>
+    <script src="/js/phaser-2.6.2/src/geom/Matrix.js"></script>
+    <script src="/js/phaser-2.6.2/src/geom/Point.js"></script>
+    <script src="/js/phaser-2.6.2/src/geom/Polygon.js"></script>
+    <script src="/js/phaser-2.6.2/src/geom/Rectangle.js"></script>
+    <script src="/js/phaser-2.6.2/src/geom/RoundedRectangle.js"></script>
+    <script src="/js/phaser-2.6.2/src/input/DeviceButton.js"></script>
+    <script src="/js/phaser-2.6.2/src/input/Gamepad.js"></script>
+    <script src="/js/phaser-2.6.2/src/input/Input.js"></script>
+    <script src="/js/phaser-2.6.2/src/input/InputHandler.js"></script>
+    <script src="/js/phaser-2.6.2/src/input/Key.js"></script>
+    <script src="/js/phaser-2.6.2/src/input/Keyboard.js"></script>
+    <script src="/js/phaser-2.6.2/src/input/Mouse.js"></script>
+    <script src="/js/phaser-2.6.2/src/input/MSPointer.js"></script>
+    <script src="/js/phaser-2.6.2/src/input/Pointer.js"></script>
+    <script src="/js/phaser-2.6.2/src/input/SinglePad.js"></script>
+    <script src="/js/phaser-2.6.2/src/input/Touch.js"></script>
+    <script src="/js/phaser-2.6.2/src/Intro.js"></script>
+    <script src="/js/phaser-2.6.2/src/loader/Cache.js"></script>
+    <script src="/js/phaser-2.6.2/src/loader/Loader.js"></script>
+    <script src="/js/phaser-2.6.2/src/loader/LoaderParser.js"></script>
+    <script src="/js/phaser-2.6.2/src/math/Math.js"></script>
+    <script src="/js/phaser-2.6.2/src/math/QuadTree.js"></script>
+    <script src="/js/phaser-2.6.2/src/math/RandomDataGenerator.js"></script>
+    <script src="/js/phaser-2.6.2/src/net/Net.js"></script>
+    <script src="/js/phaser-2.6.2/src/Outro.js"></script>
+    <script src="/js/phaser-2.6.2/src/particles/arcade/ArcadeParticles.js"></script>
+    <script src="/js/phaser-2.6.2/src/particles/arcade/Emitter.js"></script>
+    <script src="/js/phaser-2.6.2/src/particles/Particles.js"></script>
+    <script src="/js/phaser-2.6.2/src/Phaser.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/arcade/Body.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/arcade/TilemapCollision.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/arcade/World.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/ninja/AABB.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/ninja/Body.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/ninja/Circle.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/ninja/Tile.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/ninja/World.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/Body.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/BodyDebug.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/CollisionGroup.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/ContactMaterial.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/DistanceConstraint.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/FixtureList.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/GearConstraint.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/InversePointProxy.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/LockConstraint.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/Material.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/p2.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/PointProxy.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/PrismaticConstraint.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/RevoluteConstraint.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/RotationalSpring.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/Spring.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/p2/World.js"></script>
+    <script src="/js/phaser-2.6.2/src/physics/Physics.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/display/DisplayObject.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/display/DisplayObjectContainer.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/display/Sprite.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/display/SpriteBatch.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/extras/Rope.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/extras/Strip.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/extras/TilingSprite.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/filters/AbstractFilter.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/Intro.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/Outro.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/Pixi.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/primitives/Graphics.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/primitives/GraphicsData.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/canvas/CanvasGraphics.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/canvas/CanvasRenderer.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/canvas/utils/CanvasBuffer.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/canvas/utils/CanvasMaskManager.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/canvas/utils/CanvasTinter.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/webgl/shaders/ComplexPrimitiveShader.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/webgl/shaders/PixiFastShader.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/webgl/shaders/PixiShader.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/webgl/shaders/PrimitiveShader.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/webgl/shaders/StripShader.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/webgl/utils/FilterTexture.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/webgl/utils/WebGLBlendModeManager.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/webgl/utils/WebGLFastSpriteBatch.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/webgl/utils/WebGLFilterManager.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/webgl/utils/WebGLGraphics.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/webgl/utils/WebGLMaskManager.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/webgl/utils/WebGLShaderManager.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/webgl/utils/WebGLShaderUtils.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/webgl/utils/WebGLSpriteBatch.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/webgl/utils/WebGLStencilManager.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/renderers/webgl/WebGLRenderer.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/textures/BaseTexture.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/textures/RenderTexture.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/textures/Texture.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/utils/CanvasPool.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/utils/EarCut.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/utils/EventTarget.js"></script>
+    <script src="/js/phaser-2.6.2/src/pixi/utils/Utils.js"></script>
+    <script src="/js/phaser-2.6.2/src/PixiDefaults.js"></script>
+    <script src="/js/phaser-2.6.2/src/plugins/path/EventTarget.js"></script>
+    <script src="/js/phaser-2.6.2/src/plugins/path/Path.js"></script>
+    <script src="/js/phaser-2.6.2/src/plugins/path/PathFollower.js"></script>
+    <script src="/js/phaser-2.6.2/src/plugins/path/PathManagerPlugin.js"></script>
+    <script src="/js/phaser-2.6.2/src/plugins/path/PathPoint.js"></script>
+    <script src="/js/phaser-2.6.2/src/plugins/weapon/Bullet.js"></script>
+    <script src="/js/phaser-2.6.2/src/plugins/weapon/WeaponPlugin.js"></script>
+    <script src="/js/phaser-2.6.2/src/polyfills.js"></script>
+    <script src="/js/phaser-2.6.2/src/sound/AudioSprite.js"></script>
+    <script src="/js/phaser-2.6.2/src/sound/Sound.js"></script>
+    <script src="/js/phaser-2.6.2/src/sound/SoundManager.js"></script>
+    <script src="/js/phaser-2.6.2/src/stubs/Color.js"></script>
+    <script src="/js/phaser-2.6.2/src/stubs/Create.js"></script>
+    <script src="/js/phaser-2.6.2/src/stubs/Debug.js"></script>
+    <script src="/js/phaser-2.6.2/src/stubs/DOM.js"></script>
+    <script src="/js/phaser-2.6.2/src/stubs/Net.js"></script>
+    <script src="/js/phaser-2.6.2/src/stubs/ScaleManager.js"></script>
+    <script src="/js/phaser-2.6.2/src/stubs/SoundManager.js"></script>
+    <script src="/js/phaser-2.6.2/src/stubs/TileSprite.js"></script>
+    <script src="/js/phaser-2.6.2/src/stubs/TweenManager.js"></script>
+    <script src="/js/phaser-2.6.2/src/tilemap/ImageCollection.js"></script>
+    <script src="/js/phaser-2.6.2/src/tilemap/Tile.js"></script>
+    <script src="/js/phaser-2.6.2/src/tilemap/Tilemap.js"></script>
+    <script src="/js/phaser-2.6.2/src/tilemap/TilemapLayer.js"></script>
+    <script src="/js/phaser-2.6.2/src/tilemap/TilemapParser.js"></script>
+    <script src="/js/phaser-2.6.2/src/tilemap/Tileset.js"></script>
+    <script src="/js/phaser-2.6.2/src/time/Time.js"></script>
+    <script src="/js/phaser-2.6.2/src/time/Timer.js"></script>
+    <script src="/js/phaser-2.6.2/src/time/TimerEvent.js"></script>
+    <script src="/js/phaser-2.6.2/src/tween/Easing.js"></script>
+    <script src="/js/phaser-2.6.2/src/tween/Tween.js"></script>
+    <script src="/js/phaser-2.6.2/src/tween/TweenData.js"></script>
+    <script src="/js/phaser-2.6.2/src/tween/TweenManager.js"></script>
+    <script src="/js/phaser-2.6.2/src/utils/ArraySet.js"></script>
+    <script src="/js/phaser-2.6.2/src/utils/ArrayUtils.js"></script>
+    <script src="/js/phaser-2.6.2/src/utils/Canvas.js"></script>
+    <script src="/js/phaser-2.6.2/src/utils/Color.js"></script>
+    <script src="/js/phaser-2.6.2/src/utils/Debug.js"></script>
+    <script src="/js/phaser-2.6.2/src/utils/Device.js"></script>
+    <script src="/js/phaser-2.6.2/src/utils/DOM.js"></script>
+    <script src="/js/phaser-2.6.2/src/utils/LinkedList.js"></script>
+    <script src="/js/phaser-2.6.2/src/utils/RequestAnimationFrame.js"></script>
+    <script src="/js/phaser-2.6.2/src/utils/Utils.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/buildtsdoc-debug.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/buildtsdoc.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/jsdoc-plugins/filterpixi.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/jsdoc-plugins/namealias.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/jsdoc-plugins/p2completeclass.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/jsdoc-plugins/proptomember.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/jsdoc-plugins/shortlinks.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/jsdoc-plugins/sourceproxy.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/options/buildtsdoc.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/options/clean.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/options/concat.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/options/connect.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/options/copy.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/options/eslint.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/options/gitclone.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/options/jsdoc.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/options/jshint.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/options/replace.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/options/uglify.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/pixidoc.js"></script>
+    <script src="/js/phaser-2.6.2/tasks/yuidoc-to-jsdoc/converter.js"></script>
+    <!--SCRIPTS END-->
+  </body>
+</html>

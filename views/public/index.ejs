@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ArcadeBarbaric</title>
+<link rel="stylesheet" type="text/css" href="/styles/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/styles/styles.css">
+<script src="/js/phaser-2.6.2/build/phaser.min.js"></script>
+</head>
+<body>
+<div class="container">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/index">ArcadeBarbaric</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/games">Games List</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    	<li><a href="#">Vuong</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+<div class="container-fluid">
+
+    <% games.forEach(function(game) { %>
+        <div class="col-xs-4">
+            <a href="games/<%= game.game %>"><img src="/<%= game.image %>"></a><br>
+            <p>Rating: <%= game.rating %></p>
+            <p>Description: <%= game.description %> </p>
+        </div>
+    <% }); %>
+
+</div>
+</body>
+</html>

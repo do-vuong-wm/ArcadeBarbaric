@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ArcadeBarbaric</title>
+<link rel="stylesheet" type="text/css" href="/styles/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/styles/styles.css">
+<script src="/js/phaser-2.6.2/build/phaser.min.js"></script>
+</head>
+<body>
+<div class="container">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/index">ArcadeBarbaric</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/games">Games List</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    	<li><a href="#">Vuong</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+<div id="game-container">
+<h1><%= (game.game).toUpperCase(); %></h1>
+</div>
+
+<script src="/js/games/<%= game.game %>.js"></script>
+
+</body>
+</html>
