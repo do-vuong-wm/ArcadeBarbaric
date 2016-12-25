@@ -65,9 +65,9 @@ module.exports = {
 
     },
 
-    ':name': function (req, res) {
+    findOne: function (req, res) {
 
-        var id = req.params.name;
+        var id = req.params.id;
 
         if (!id) {
             return res.badRequest('No id passed.');

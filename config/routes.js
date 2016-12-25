@@ -33,7 +33,7 @@ module.exports.routes = {
   ***************************************************************************/
 
   'get /': 'GamesController.find',
-  'get /index': 'GamesController.find'
+  'get /index': 'GamesController.find',
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
@@ -43,5 +43,8 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+
+  'get /games': 'GamesController.find',
+  'get /games/:id': 'GamesController.findOne',
 
 };
