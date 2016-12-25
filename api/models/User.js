@@ -9,6 +9,24 @@ module.exports = {
 
   attributes: {
 
+    username: {
+
+      type: 'string',
+      unique: true,
+      defaultsTo: 'text'
+
+    },
+    password: {
+
+      type: 'string'
+
+    },
+    ip: {
+
+      type: 'text'
+
+    }
+
   }
 
 };

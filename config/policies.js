@@ -40,7 +40,7 @@ module.exports.policies = {
       create: false,
       update: false,
       delete: false,
-      find: true
+      find: ['getIp']
 
     },
 
