@@ -1,6 +1,5 @@
 {
     "hooks": {
-        "session": false,
-        "grunt": false
+        "session": false
     }
 }
