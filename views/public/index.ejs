@@ -26,8 +26,8 @@
 <div class="container-fluid">
 
     <% games.forEach(function(game) { %>
-        <div class="col-xs-4">
-            <a href="games/<%= game.game %>"><img src="/<%= game.image %>"></a><br>
+        <div class="col-xs-12 col-sm-4">
+            <a href="games/<%= game.game %>"><img src="/<%= game.image %>" class="img-responsive center-block"></a><br>
             <p>Rating: <%= game.rating %></p>
             <p>Description: <%= game.description %> </p>
         </div>

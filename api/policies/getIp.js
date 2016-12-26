@@ -5,8 +5,6 @@ module.exports = function (req, res, next) {
     User.find({ip: ip}).exec(function(err, user) {
         if(user.length == 0){
 
-            console.log(ip);
-
             User.create({ip: ip}).exec(function(err, user){
 
                 if (err) {

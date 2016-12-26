@@ -12,8 +12,7 @@ module.exports = {
     username: {
 
       type: 'string',
-      unique: true,
-      defaultsTo: 'text'
+      unique: true
 
     },
     password: {
