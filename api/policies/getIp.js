@@ -1,9 +1,11 @@
 module.exports = function (req, res, next) {
 
-    var ip = req.connection.remoteAddress;
+    var ip = req.ips;
 
     User.find({ip: ip}).exec(function(err, user) {
         if(user.length == 0){
+
+            console.log(ip);
 
             User.create({ip: ip}).exec(function(err, user){
 
@@ -17,7 +19,6 @@ module.exports = function (req, res, next) {
 
         }else{
 
-            console.log(user);
             next()
 
         }
