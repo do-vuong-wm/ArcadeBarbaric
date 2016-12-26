@@ -24,16 +24,16 @@ window.onload = function() {
 
     function preload () {
 
-        game.load.image('sky', '/js/games/assets/sky.png');
-        game.load.image('ground', '/js/games/assets/platform.png');
-        game.load.image('star', '/js/games/assets/star.png');
-        game.load.image('bubble', '/js/games/assets/bubble.png');
-        game.load.spritesheet('dude', '/js/games/assets/dude.png', 32, 48);
-        game.load.spritesheet('coin', '/js/games/assets/coin.png', 32, 32);
-        game.load.spritesheet('octo', '/js/games/assets/baddie.png', 32, 32);
-        game.load.audio('audio', '/js/games/assets/audio.wav');
-        game.load.audio('pickup', '/js/games/assets/p-ping.mp3');
-        game.load.audio('gameover', '/js/games/assets/player_death.wav');
+        game.load.image('sky', '/js/games/aquacoi_asset/sky.png');
+        game.load.image('ground', '/js/games/aquacoi_asset/platform.png');
+        game.load.image('star', '/js/games/aquacoi_asset/star.png');
+        game.load.image('bubble', '/js/games/aquacoi_asset/bubble.png');
+        game.load.spritesheet('dude', '/js/games/aquacoi_asset/dude.png', 32, 48);
+        game.load.spritesheet('coin', '/js/games/aquacoi_asset/coin.png', 32, 32);
+        game.load.spritesheet('octo', '/js/games/aquacoi_asset/baddie.png', 32, 32);
+        game.load.audio('audio', '/js/games/aquacoi_asset/audio.wav');
+        game.load.audio('pickup', '/js/games/aquacoi_asset/p-ping.mp3');
+        game.load.audio('gameover', '/js/games/aquacoi_asset/player_death.wav');
 
     }
 
